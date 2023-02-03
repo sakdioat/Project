@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'//application
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        //applicationId 'org.tensorflow.demo'
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName '1.0'
+
+//        externalNativeBuild {
+//            cmake {
+//                cppFlags ""
+//            }
+//        }
+
+//        ndk {
+//            abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+//        }
+    }
+    allprojects {
+        repositories {
+            jcenter()
+        }
+    }
+
+//    dependencies {
+//        implementation 'org.tensorflow:tensorflow-android:1.11.0'
+//    }
+
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
+}
+
+dependencies {
+    implementation 'org.tensorflow:tensorflow-android:1.11.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BABABA</color>
+    <color name="colorPrimaryDark">#85D7FF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_color">#020202</color>
+
+    <color name="colorVideo">#bdc4c7</color>
+    <color name="color_body">#44e9f7f5</color>
+</resources>

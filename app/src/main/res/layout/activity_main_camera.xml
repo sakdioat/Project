@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_camera">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <com.otaliastudios.cameraview.CameraView
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_margin="5dp" />
+
+        <ImageButton
+            android:id="@+id/ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#ffff"
+            android:onClick="Progress2"
+            android:src="@drawable/shutter"
+            tools:ignore="OnClick" />
+
+
+        <!--<com.otaliastudios.cameraview.CameraView-->
+        <!--android:id="@+id/cameraView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="520dp"-->
+        <!--android:layout_margin="5dp" />-->
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnToggleCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="35dp"
+        android:scaleType="fitCenter"
+        android:background="#000099FF"
+        android:src="@drawable/camera_switch"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
